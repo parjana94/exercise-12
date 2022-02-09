@@ -1,0 +1,100 @@
+@import url('https://fonts.googleapis.com/css2?family=Barlow+Semi+Condensed:wght@500;600&family=Open+Sans&display=swap');
+body{
+    background-color: #edf2f8;
+    font-family: 'Barlow Semi Condensed', sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+.container{
+    max-width: 1200px;
+    display: grid;
+    grid-template-columns: repeat(4, calc(100%/4));
+    grid-gap: 40px;
+}
+.clifford{
+    grid-column: 1 / span 2;
+    background-color: #733fc8;
+    color: white;
+    box-shadow: 4px 6px 17px 0px rgba(0,0,0,0.3);
+    border-radius: 10px;
+    padding: 30px;
+}
+.walters{
+    background-color: #49556b;
+    color: white;
+    box-shadow: 4px 6px 17px 0px rgba(0,0,0,0.3);
+    border-radius: 10px;
+    padding: 30px;
+}
+.abrams{
+    grid-column: 2 / span 2;
+    background-color: #18202d;
+    color: white;
+    box-shadow: 4px 6px 17px 0px rgba(0,0,0,0.3);
+    border-radius: 10px;
+    padding: 30px;
+}
+.whittle{
+    grid-row: span 2 ;
+    background-color: white;
+    box-shadow: 4px 6px 17px 0px rgba(0,0,0,0.3);
+    border-radius: 10px;
+    padding: 30px;
+}
+.harmon{
+    background-color: white;
+    box-shadow: 4px 6px 17px 0px rgba(0,0,0,0.3);
+    border-radius: 10px;
+    padding: 30px;
+}
+.prof img{
+    border-radius: 50%;
+    margin-right: 20px;
+    width: 40px;
+}
+.border{
+    border: 2px solid #6f4ea7;
+}
+.prof{
+    display: flex;
+    align-items: center;
+}
+.name h4{
+    text-transform: capitalize;
+    margin-bottom: 3px;
+}
+.name h5{
+    text-transform: capitalize;
+    color: #93a0b3;
+    font-weight: 500;
+    font-size: 13px;
+}
+h2{
+    margin-top: 20px;
+    font-weight: 600;
+    font-size: 26px;
+    line-height: 30px;
+}
+p{
+    margin-top: 20px;
+    color: #93a0b3;
+}
+.clifford p{
+    color: #ad83f1;
+    line-height: 20px;
+}
+.whittle p{
+    line-height: 23px;
+}
+@media only screen and (max-width: 375px){
+    .container{
+        display: flex;
+        flex-direction: column;
+        max-width: 330px;
+    }
+    .whittle{
+        order: 5;
+    }
+}
